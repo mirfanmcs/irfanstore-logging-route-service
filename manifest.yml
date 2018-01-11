@@ -1,0 +1,22 @@
+---
+applications:
+- name: irfanstore-logging-route-service
+  memory: 1G
+  instances: 1
+  #random-route: false
+  timeout: 180
+  path: ./target/irfanstore-logging-route-service-1.0-SNAPSHOT.jar
+  #services:
+
+  env:
+    SPRING_PROFILES_ACTIVE: cloud
+
+
+#Bind to the following services:
+
+
+# Create user provided routing service of this application.
+# cf cups ostore-logging-routing-service -r https://irfanstore-logging-route-service.cfapps.io
+
+# Bind route service
+# cf bind-route-service cfapps.io ostore-logging-routing-service --hostname agency-anthracoid-orchidotomy
