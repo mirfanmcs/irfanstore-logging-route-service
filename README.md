@@ -1,6 +1,6 @@
 irfanstore-logging-route-service
 ===============
-This is the sample routing service writting to run in the Pivotal Cloud Foundry. This application logs the incoming request to the standard `STDOUT`.
+This is the sample routing service written to run in the Pivotal Cloud Foundry. This application logs the incoming request to the standard `STDOUT`.
 
 ## Running application inside Pivotal Cloud Foundry
 
